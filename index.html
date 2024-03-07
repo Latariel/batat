@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="/node_modules/index.css" rel="stylesheet">
+    <script src="index.js" rel="script"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sometype+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="modal">
+    <div class="left-part">
+        <img class="img" src="img/Product_Img.jpg">
+        <table class="portion">
+            <caption>КБЖУ (на порцию 300 г):</caption>
+            <tbody>
+            <tr>
+                <td>Белки</td>
+                <td>26,70 г</td>
+            </tr>
+            <tr>
+                <td>Жиры</td>
+                <td>17,38 г</td>
+            </tr>
+            <tr>
+                <td>Углеводы</td>
+                <td>17,20 г</td>
+            </tr>
+            <tr>
+                <td>Калорийность</td>
+                <td>324,08 ккал</td>
+            </tr>
+            </tbody>
+        </table>
+            </div>
+    <div class="right-part">
+        <div class="batat">
+            <p class="bat">Батат фри</p>
+            <p class="gr">140 г</p>
+            </div>
+        <div class="line"></div>
+    </div>
+    <table class="order">
+        <tr>
+            <td class="souse">Соус на выбор</td>
+            <td class="one">1/1 за 0₽</td>
+        </tr>
+    </table>
+
+    <table class="souse_two">
+        <tr class="ket">
+            <td class="border">Кетчуп +0 ₽</td>
+            <td class=""><button onclick="removeItem('ketchup', 0)">—</button></td>
+            <td><span id="ketchup">0</span> </td>
+            <td class="border"><button onclick="addItem('ketchup', 0)">+</button></td>
+        </tr>
+        <tr class="ch">
+            <td class="border">Сырный +60 ₽</td>
+            <td class=""><button onclick="removeItem('cheese', 60)">—</button></td>
+            <td><span id="cheese">0</span> </td>
+            <td class=border""><button onclick="addItem('cheese', 60)">+</button></td>
+        </tr>
+        <tr class="bl">
+            <td class="border">Блю-чиз +60 ₽</td>
+            <td class=""><button onclick="removeItem('blue_cheese', 60)">—</button></td>
+            <td><span id="blue_cheese">0</span> </td>
+            <td class="border"><button onclick="addItem('blue_cheese', 60)">+</button></td>
+        </tr>
+        <tr class="bbq">
+            <td class="border">Барбекю +60 ₽</td>
+            <td class=""><button onclick="removeItem('bbq', 60)">—</button></td>
+            <td><span id="bbq">0</span> </td>
+            <td class="border"><button onclick="addItem('bbq', 60)">+</button></td>
+        </tr>
+    </table>
+    <p class="total_1"> <span class="final" id="total">220 ₽</span>
+        <button class="btn">Добавить</button></p>
+        </div>
+</div>
+</body>
+</html>
